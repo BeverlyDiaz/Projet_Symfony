@@ -9,6 +9,12 @@
       "css": [
         "/build/app.css"
       ]
+    },
+    "Partie_2": {
+      "js": [
+        "/build/runtime.js",
+        "/build/Partie_2.js"
+      ]
     }
   }
 }

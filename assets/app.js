@@ -11,7 +11,6 @@ import './styles/app.css';
 // start the Stimulus application
 import './bootstrap';
 
-
 document.querySelector('#btn').addEventListener('click', function () {
     document.querySelector("#err").innerHTML = ""
     document.querySelectorAll("img[id='image']")[0].style.display = "inline"
