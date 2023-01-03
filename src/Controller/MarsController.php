@@ -21,5 +21,4 @@ class MarsController extends AbstractController
     {
         return $this->render('mars/index.html.twig');
     }
-
 }
