@@ -1,0 +1,55 @@
+body {
+    
+    
+    background-color: lightblue;
+    text-align: center;
+    
+    
+}
+
+
+
+.main{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+img {
+
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    margin-bottom: 20px;
+
+    
+    
+
+}
+
+#btn {
+    position: absolute;
+    margin-top: 20px;
+    
+    
+    
+}
+
+input {
+
+    margin-top: 20px;
+    width: 400px;
+    height: 30px;
+
+}
+
+h1 {
+
+    margin-top: 20px;
+
+}
+
