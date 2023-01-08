@@ -2,9 +2,11 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use dump;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class SearchController extends AbstractController
 {
@@ -14,4 +16,10 @@ class SearchController extends AbstractController
         return $this->render('search/index.html.twig');
     }
 
+    #[Route('/search/{query}', name: 'search', defaults: ['query' => null], methods:['GET', 'HEAD'])]
+    public function searchAction($query): Response
+    {
+        return $this->render('search/index.html.twig');
+        
+    }
 }

@@ -10,15 +10,31 @@ import './styles/Partie_2.css';
 
 // start the Stimulus application
 import './bootstrap';
+//load in load page
+try {
+  var query = window.location.pathname
+  var result = query.slice(8);
+  getimage(result)
+} catch (error) {
+  console.log('err!')
+}
 
 
 document.querySelector('#btn').addEventListener('click', function () {
+  var result = ""; //debug result
+  getimage(result);
+})
+
+function getimage(result) {
   document.querySelector("#err").innerHTML = ""
   document.querySelectorAll("img[id='image']")[0].style.display = "inline"
 
   try {
-
-    const q = document.querySelector('#Search').value
+    if (result.length == 0) {
+      const q = document.querySelector('#Search').value
+    } else {
+      var q = result;
+    }
     fetch(`https://images-api.nasa.gov/search?q=${q}&media_type=image`)
       .then(res => res.json())
       .then(data => {
@@ -26,7 +42,7 @@ document.querySelector('#btn').addEventListener('click', function () {
 
         const Resp = data.collection.items.map(items => items.data[0].nasa_id);
 
-        const numbers = data.collection.items.length 
+        const numbers = data.collection.items.length
         var min = 0;
         var max = numbers;
         var i = Math.floor(Math.random() * (max - min)) + min;
@@ -39,13 +55,10 @@ document.querySelector('#btn').addEventListener('click', function () {
               return data.collection.items[1].href;
 
             })
-
-        } catch (error) { }
-
+        } catch (error) { 
+        }
 
       })
-
   } catch (error) {
   }
-
-})
+}
