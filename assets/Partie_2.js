@@ -10,31 +10,16 @@ import './styles/Partie_2.css';
 
 // start the Stimulus application
 import './bootstrap';
-//load in load page
-try {
-  var query = window.location.pathname
-  var result = query.slice(8);
-  getimage(result)
-} catch (error) {
-  console.log('err!')
-}
-
 
 document.querySelector('#btn').addEventListener('click', function () {
-  var result = ""; //debug result
-  getimage(result);
-})
-
-function getimage(result) {
+ 
   document.querySelector("#err").innerHTML = ""
   document.querySelectorAll("img[id='image']")[0].style.display = "inline"
 
   try {
-    if (result.length == 0) {
-      const q = document.querySelector('#Search').value
-    } else {
-      var q = result;
-    }
+    
+    const q = document.querySelector('#Search').value
+
     fetch(`https://images-api.nasa.gov/search?q=${q}&media_type=image`)
       .then(res => res.json())
       .then(data => {
@@ -61,4 +46,4 @@ function getimage(result) {
       })
   } catch (error) {
   }
-}
+})

@@ -1,0 +1,34 @@
+{% block stylesheets %}
+            {{ encore_entry_link_tags('Partie_2') }}
+        {% endblock %}
+
+{% block javascripts %}
+
+            {{ encore_entry_script_tags('Partie_2') }}
+
+{% endblock %}
+
+{% block body %}
+
+    <header>
+
+                <img id="logo" src="https://www.pngkey.com/png/full/481-4819402_nasa-logo-png-transparent-logo-nasa-hd-png.png"></img>
+            <h1>NASA Image and Video Library</h1>
+
+    </header>
+
+            <h2>Rechercher une photo dans la library</h2>
+
+   <form method="post">
+                <div class="inner-form">
+                    <div class="input-field">
+                         <input type="text" name="search" placeholder="Recherche" value="" id="Search" >
+                         <button id="btn" type="button">Rechercher</button>
+                        </div>
+                    </div>      
+    </form>
+            <h3 id="err"></h3>
+                <img id="image" src=""></img>
+
+
+{% endblock %}
