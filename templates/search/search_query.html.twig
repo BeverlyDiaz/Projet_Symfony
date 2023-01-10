@@ -8,14 +8,16 @@
 
 {% endblock %}
 
-<header>
+{% block body %}
 
-<img id="logo" src="https://www.pngkey.com/png/full/481-4819402_nasa-logo-png-transparent-logo-nasa-hd-png.png"></img>
-<h1>NASA Image and Video Library</h1>
+    <header>
 
-</header>
+            <img id="logo" src="https://www.pngkey.com/png/full/481-4819402_nasa-logo-png-transparent-logo-nasa-hd-png.png"></img>
+        <h1>NASA Image and Video Library</h1>
 
- <h2>Rechercher une photo dans la library</h2>
+    </header>
+
+        <h2>Rechercher une photo dans la library</h2>
 
    <form method="post">
                 <div class="inner-form">
@@ -27,10 +29,5 @@
             </form>
             <h3 id="err"></h3>
             <img id="image" src=""></img>
-
-</div>
-
-{% block body %}
-
 
 {% endblock %}
