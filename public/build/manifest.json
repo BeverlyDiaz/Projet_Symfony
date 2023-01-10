@@ -1,7 +1,10 @@
 {
-  "build/app.css": "/build/app.css",
-  "build/app.js": "/build/app.js",
-  "build/Partie_2.js": "/build/Partie_2.js",
-  "build/runtime.js": "/build/runtime.js",
-  "build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_ar-034dde.js": "/build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_ar-034dde.js"
+  "build/app.css": "http://localhost:8080/build/app.css",
+  "build/app.js": "http://localhost:8080/build/app.js",
+  "build/Partie_2.css": "http://localhost:8080/build/Partie_2.css",
+  "build/Partie_2.js": "http://localhost:8080/build/Partie_2.js",
+  "build/Partie_3.css": "http://localhost:8080/build/Partie_3.css",
+  "build/Partie_3.js": "http://localhost:8080/build/Partie_3.js",
+  "build/runtime.js": "http://localhost:8080/build/runtime.js",
+  "build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_ar-bed3d2.js": "http://localhost:8080/build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_ar-bed3d2.js"
 }

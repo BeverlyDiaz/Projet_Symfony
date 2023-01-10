@@ -13,11 +13,21 @@ return [[
         'app' => [
             'js' => [
                 '/build/runtime.js',
-                '/build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_da-03e5c3.js',
+                '/build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_ar-034dde.js',
                 '/build/app.js',
             ],
             'css' => [
                 '/build/app.css',
+            ],
+        ],
+        'Partie_2' => [
+            'js' => [
+                '/build/runtime.js',
+                '/build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_ar-034dde.js',
+                '/build/Partie_2.js',
+            ],
+            'css' => [
+                '/build/Partie_2.css',
             ],
         ],
     ],

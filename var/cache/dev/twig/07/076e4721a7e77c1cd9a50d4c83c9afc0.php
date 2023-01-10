@@ -52,11 +52,10 @@ class __TwigTemplate_53a0c8439d05423acf46464d9b9c6e11 extends Template
         $this->displayBlock('javascripts', $context, $blocks);
         // line 14
         echo "
-
 ";
-        // line 16
+        // line 15
         $this->displayBlock('body', $context, $blocks);
-        // line 41
+        // line 43
         echo "
 ";
         
@@ -103,36 +102,39 @@ class __TwigTemplate_53a0c8439d05423acf46464d9b9c6e11 extends Template
 
     }
 
-    // line 16
+    // line 15
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 17
+        // line 16
         echo "
-<div class=\"card\"> 
+<header>
 
-<h1>Rechercher une photo</h1>
+
+<img id=\"logo\" src=\"https://www.pngkey.com/png/full/481-4819402_nasa-logo-png-transparent-logo-nasa-hd-png.png\"></img>
+<h1>Mars Rover Photos</h1>
+
+</header>
+
+        <h2>Rechercher une photo à partir d'une date</h2>
 
 
    <form method = \"GET\" >
                 <div class=\"inner-form\">
                     <div class=\"input-field\">
                          <input type=\"text\" name=\"date\" placeholder=\"Format obligatoire : AAAA-MM-JJ\" value=\"\" id=\"Date\" >
-                         <button id=\"btn\" type=\"button\">
-                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\">
-                        <path d=\"M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z\"></path>
-                        </svg>
-                        </button>
+                         <button id=\"btn\" type=\"button\">Rechercher</button>
                         </div>
                     </div>      
             </form>
-            <h1 id=\"err\"></h1>
-            <img id=\"image\" src=\"\"></img>
+            <div id=\"container\">
+            <h3 id=\"err\"></h3>
+            <img id=\"image\" src=\"https://cnes.fr/sites/default/files/drupal/201607/image/is_mars.jpg\"></img>
+            </div>
 
-</div>
             
 ";
         
@@ -147,7 +149,7 @@ class __TwigTemplate_53a0c8439d05423acf46464d9b9c6e11 extends Template
 
     public function getDebugInfo()
     {
-        return array (  114 => 17,  107 => 16,  96 => 10,  92 => 8,  85 => 7,  75 => 3,  68 => 2,  60 => 41,  58 => 16,  54 => 14,  52 => 7,  48 => 5,  46 => 2,  43 => 1,);
+        return array (  113 => 16,  106 => 15,  95 => 10,  91 => 8,  84 => 7,  74 => 3,  67 => 2,  59 => 43,  57 => 15,  54 => 14,  52 => 7,  48 => 5,  46 => 2,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -166,30 +168,32 @@ class __TwigTemplate_53a0c8439d05423acf46464d9b9c6e11 extends Template
 
 {% endblock %}
 
-
 {% block body %}
 
-<div class=\"card\"> 
+<header>
 
-<h1>Rechercher une photo</h1>
+
+<img id=\"logo\" src=\"https://www.pngkey.com/png/full/481-4819402_nasa-logo-png-transparent-logo-nasa-hd-png.png\"></img>
+<h1>Mars Rover Photos</h1>
+
+</header>
+
+        <h2>Rechercher une photo à partir d'une date</h2>
 
 
    <form method = \"GET\" >
                 <div class=\"inner-form\">
                     <div class=\"input-field\">
                          <input type=\"text\" name=\"date\" placeholder=\"Format obligatoire : AAAA-MM-JJ\" value=\"\" id=\"Date\" >
-                         <button id=\"btn\" type=\"button\">
-                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\">
-                        <path d=\"M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z\"></path>
-                        </svg>
-                        </button>
+                         <button id=\"btn\" type=\"button\">Rechercher</button>
                         </div>
                     </div>      
             </form>
-            <h1 id=\"err\"></h1>
-            <img id=\"image\" src=\"\"></img>
+            <div id=\"container\">
+            <h3 id=\"err\"></h3>
+            <img id=\"image\" src=\"https://cnes.fr/sites/default/files/drupal/201607/image/is_mars.jpg\"></img>
+            </div>
 
-</div>
             
 {% endblock %}
 

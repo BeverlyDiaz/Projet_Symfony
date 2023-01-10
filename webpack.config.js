@@ -2,6 +2,8 @@ const Encore = require('@symfony/webpack-encore');
 
 // Manually configure the runtime environment if not already configured yet by the "encore" command.
 // It's useful when you use tools that rely on webpack.config.js file.
+require("dotenv").config(); // line to add
+const BrowserSyncPlugin = require("browser-sync-webpack-plugin"); // line to add
 if (!Encore.isRuntimeEnvironmentConfigured()) {
     Encore.configureRuntimeEnvironment(process.env.NODE_ENV || 'dev');
 }
@@ -22,6 +24,8 @@ Encore
      */
     .addEntry('app', './assets/app.js')
     .addEntry('Partie_2', './assets/Partie_2.js')
+    .addEntry('Partie_3', './assets/Partie_3.js')
+
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
     .enableStimulusBridge('./assets/controllers.json')
@@ -72,6 +76,37 @@ Encore
 
     // uncomment if you're having problems with a jQuery plugin
     //.autoProvidejQuery()
+
+        // entry to add 
+        .addPlugin(new BrowserSyncPlugin(
+            {
+                host: "localhost",
+                port: 3000,
+                proxy: process.env.PROXY,
+                files: [
+                    {
+                        match: ["src/*.php"],
+                    },
+                    {
+                        match: ["templates/*.twig"],
+                    },
+                    {
+                        match: ["assets/*.js"],
+                    },
+                    {
+                        match: ["assets/*.css"],
+                    },
+                ],
+                notify: false,
+            },
+    
+            {
+    
+                reload: true,
+            }
+        ))
+    
+    
 ;
 
 module.exports = Encore.getWebpackConfig();
