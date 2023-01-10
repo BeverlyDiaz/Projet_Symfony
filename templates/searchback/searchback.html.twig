@@ -1,0 +1,18 @@
+{% block stylesheets %}
+            {{ encore_entry_link_tags('Partie_2') }}
+        {% endblock %}
+
+
+{% block body %}
+
+    <header>
+
+            <img id="logo" src="https://www.pngkey.com/png/full/481-4819402_nasa-logo-png-transparent-logo-nasa-hd-png.png"></img>
+        <h1>NASA Image and Video Library</h1>
+
+    </header>
+
+        <h2>Rechercher une photo dans la library</h2>
+            <img id="image_searchback" src="http://images-assets.nasa.gov/image/{{data.collection.items.1.data.0.nasa_id}}/{{data.collection.items.1.data.0.nasa_id}}~small.jpg"></img>
+
+{% endblock %}
