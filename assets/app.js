@@ -31,7 +31,7 @@ document.querySelector('#btn').addEventListener('click', function () {
             document.querySelector("#image").src = data.photos[i].img_src;
             return data.photos[i].img_src;
           } catch (error) {
-            document.querySelector("#err").innerHTML = "Pas de photo Trouvée à la date suivante : " + date;
+            document.querySelector("#err").innerHTML = "Pas de photo trouvée à la date suivante : " + date;
             document.querySelectorAll("img[id='image']")[0].style.display = "none"
           }
         })

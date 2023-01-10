@@ -1,55 +1,114 @@
+* { 
+
+    box-sizing: border-box;
+
+}
+
+
 body {
     
     
-    background-color: lightblue;
-    text-align: center;
-    
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 
+header {
 
+    height: 150px;
 
-.main{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    height: 10px;
-    width: 10px;
-    background-color: #fff;
-    border-radius: 50%;
 }
 
-img {
+#logo {
+
+
+    margin-top: 20px;
+    height: 100px  
+
+
+}
+
+header {
+
+    padding-left: 50px;
+    
+}
+
+#image {
 
     width: 400px;
     height: 400px;
-    background-color: #fff;
-    margin-bottom: 20px;
+    margin-left: 550px;
+    margin-top: -50px;
 
     
     
 
 }
 
-#btn {
-    position: absolute;
-    margin-top: 20px;
-    
-    
-    
+input[type=text] {
+
+
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.4);
+    padding: 17px 30px;
+    border: none;
+    width: 50%;
+    font-size: 20px;
+    height: 50px;
+
 }
 
-input {
+button[type=button] {
+
+    cursor: pointer;
+    padding: 17px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    background-color: #0b3d91;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.4);
+    text-align: center;
+
+}
+
+form {
+
+    text-align: center;
+    margin-top: 30px;
+
+
+
+}
+
+h2 {
 
     margin-top: 20px;
-    width: 400px;
-    height: 30px;
+    color: white;
+    text-align: center;
+
+}
+
+h3 {
+
+    margin-top: 100px;
+    color: #dd361c;
+    text-align: center;
+    font-size: 30px;
 
 }
 
 h1 {
 
-    margin-top: 20px;
+    color: white;
+    margin-top: -50px;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 10px;
 
 }
-

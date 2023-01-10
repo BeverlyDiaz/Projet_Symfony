@@ -19,6 +19,6 @@ class MarsController extends AbstractController
     #[Route('/curiosity', name: 'app_curiosity')]
     public function app_curiosity()
     {
-        return $this->render('mars/index.html.twig');
+        return $this->render('mars/mars.html.twig');
     }
 }
